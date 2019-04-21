@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   render() {
-    return(
+    return (
         <div>
           <div className="left-scene">
             <SearchForm search={this.search} />
@@ -46,7 +46,7 @@ class App extends Component {
             </div>
           </div>
           <div className="right-scene">
-            <GifList gifs={this.state.gifs} />
+            <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
           </div>
         </div>
       );
